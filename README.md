@@ -24,7 +24,7 @@ _(Lớp BootCamp Sáng 12 - Năm 2024 - Khoá Front-End)_
 
 <hr>
 
-> Bài làm của Nhóm: Trương Thục Vân (Leader) và Trần Trung Kiên.
+> Bài làm của Nhóm 9: Trương Thục Vân (Leader) và Trần Trung Kiên.
 
 <table>
 	<tr>
