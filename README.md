@@ -12,17 +12,19 @@ _(Lớp BootCamp Sáng 12 - Năm 2024 - Khoá Front-End)_
 
 # Mục tiêu
 
-1. Làm việc nhóm.
+1. Làm việc nhóm thông qua bài tập Capstone.
 
 2. Thực hành Git và GitHub.
 
-3. Responsive với Bootstrap 5.
+3. Thực hành Bootstrap 5 thông qua layout mẫu CORPVISION (w3layouts).
 
-4. Deploy với Vercel.
+4. Thực hành Responsive với Bootstrap 5.
+
+5. Deploy project với Vercel.
 
 <hr>
 
-> Bài làm của Nhóm: Trương Thục Vân và Trần Trung Kiên
+> Bài làm của Nhóm: Trương Thục Vân (Leader) và Trần Trung Kiên.
 
 <table>
 	<tr>
