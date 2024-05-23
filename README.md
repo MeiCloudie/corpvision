@@ -23,3 +23,18 @@ _(Lớp BootCamp Sáng 12 - Năm 2024 - Khoá Front-End)_
 <hr>
 
 > Bài làm của Nhóm: Trương Thục Vân và Trần Trung Kiên
+
+<table>
+	<tr>
+		<td align="center" valign="top">
+				<img loading="lazy" width="150" height="150" src="https://github.com/MeiCloudie.png?s=150">
+        <br>
+        <a href="https://github.com/MeiCloudie">Truong Thuc Van</a>
+		</td>
+		<td align="center" valign="top">
+				<img loading="lazy" width="150" height="150" src="https://github.com/Trungkien1202.png?s=150">
+        <br>
+        <a href="https://github.com/Trungkien1202">Tran Trung Kien</a>
+		</td>
+	</tr>
+</table>
