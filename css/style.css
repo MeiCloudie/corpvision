@@ -49,7 +49,7 @@ body {
 }
 
 .header__brand h1 {
-  font-size: 3.2rem;
+  font-size: 3.3rem;
   line-height: 1;
   font-weight: 600;
 }
@@ -58,6 +58,8 @@ body {
   font-size: 1.4rem;
   line-height: 1;
   font-weight: 600;
+  margin-left: 10px;
+  opacity: 0.8;
 }
 
 /* Navigation - List link */
@@ -86,7 +88,7 @@ body {
 .header.active .nav-item.show .nav-link,
 .header.active .nav-item:hover .nav-link,
 .header.active .nav-item.active .nav-link {
-  color: var(--title-color);
+  color: var(--primary-color);
 }
 
 /* Điều chỉnh màu khi hover Nav Link */
@@ -277,4 +279,34 @@ body {
 
 .search__form input::placeholder {
   color: white;
+}
+
+/* --------------------BACK TO TOP-------------------- */
+.backToTop {
+  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+  transform: translateY(50px);
+}
+
+.backToTop:hover {
+  opacity: 1 !important;
+  color: white;
+}
+.backToTop.active {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 0.8;
 }
