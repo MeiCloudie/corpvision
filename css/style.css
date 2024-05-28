@@ -564,6 +564,62 @@ body {
   color: var(--white-color);
 }
 
+/* --------------------About-------------------- */
+/* Information - Left Content */
+.about .title {
+  color: var(--title-color);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 0px !important;
+  text-align: left;
+}
+
+.about .content {
+  color: var(--text-color);
+  font-size: 1.7rem;
+  font-weight: 400;
+  opacity: 0.8;
+  margin: 24px 0 32px;
+}
+
+.about ul {
+  padding: 0;
+}
+
+.about li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about li:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.about li a {
+  color: var(--title-color);
+}
+
+.about li i {
+  color: var(--primary-color);
+  opacity: 0.8;
+  margin-right: 4px;
+}
+
+/* Images - Right Content */
+.about img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.about .img-down {
+  margin-top: 24px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
 /* --------------------BACK TO TOP-------------------- */
 .backToTop {
   text-align: center;
