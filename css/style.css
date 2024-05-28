@@ -695,6 +695,63 @@ body {
   width: 64px;
 }
 
+/* --------------------SERVICE-------------------- */
+/* Cards Content */
+.service .grids5-info img {
+  width: 100%;
+  border-top: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.service .grids5-info .title {
+  color: var(--title-color);
+  background: var(--background-color);
+  box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+  border: 1px solid var(--border-color);
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 35px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 0 !important;
+  transform: translateY(-25px);
+  transition: 0.5s;
+}
+
+.service .grids5-info:hover .title {
+  color: #33b271;
+}
+
+.service .text-para {
+  font-size: 1.7rem;
+  padding: 0 20px;
+  color: var(--text-color);
+}
+
+.service button {
+  color: var(--title-color);
+  padding: 8px 35px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 3px solid transparent;
+  outline: none;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.service button:hover {
+  color: #33b271;
+}
+
+.service button:focus {
+  border: 3px solid rgb(0 166 63 / 25%);
+}
+
 /* --------------------BACK TO TOP-------------------- */
 .backToTop {
   text-align: center;
