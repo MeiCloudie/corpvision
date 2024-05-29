@@ -2,8 +2,24 @@
 
 /* Extra large - xl - ≥1200px */
 @media screen and (max-width: 1200px) {
+  .about-company .about-company__item {
+    padding: 50px 30px;
+    grid-gap: 10px;
+  }
+
+  .about-company .about-company__item i {
+    font-size: 34px;
+    width: 35px;
+  }
 }
 
 /* Medium - md - ≥768px  */
 @media screen and (max-width: 768px) {
+  .about-company .about-company__right {
+    padding-top: 50px;
+  }
+
+  .about-company .about-company__item {
+    padding: 40px 30px;
+  }
 }

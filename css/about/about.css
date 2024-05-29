@@ -3,3 +3,141 @@
 body {
   background-color: var(--background-color);
 }
+
+/* ------------------ABOUT COMPANY------------------ */
+/* Image Box - Left Content */
+.about-company .about-company__img img {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: 0 15px 38px 0 rgb(0 0 0 / 20%);
+}
+
+.about-company .about-company__img::before {
+  content: "";
+  border-radius: 25% 70% 84% 22% / 42% 75% 25% 75%;
+  box-shadow: 0 15px 38px 0 rgb(0 0 0 / 20%);
+  background: var(--primary-color);
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  opacity: 0.4;
+  top: 0;
+  z-index: -1;
+}
+
+.about-company .about-company__img-box {
+  position: absolute;
+  background-color: var(--primary-color);
+  box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+  transform: rotate(45deg);
+  color: #ffffff;
+  text-align: center;
+  right: 85px;
+  bottom: 10px;
+  padding: 35px;
+  min-width: 200px;
+  border-radius: 8px;
+  min-height: 200px;
+}
+
+.about-company .about-company__img-info {
+  transform: rotate(-45deg);
+}
+
+.about-company .about-company__img-info h6 {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+}
+
+.about-company .about-company__img-info p {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* Information - Right Content */
+.about-company .content {
+  color: var(--text-color);
+  font-size: 1.7rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.about-company__right .subtitle {
+  color: var(--title-color);
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Button Play */
+.play-icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  font-size: 22px;
+  padding-left: 5px;
+  text-align: center;
+  line-height: 65px;
+  border-radius: 50%;
+  color: #009f4d;
+  border: 3px solid #009f4d;
+}
+
+#small-dialog,
+#small-dialog1 {
+  width: 900px;
+  height: auto;
+  margin: 40px auto;
+  position: relative;
+}
+
+#small-dialog iframe,
+#small-dialog1 iframe {
+  width: 100%;
+  height: 520px;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Card Items */
+.about-company .about-company__card {
+  margin-top: 60px;
+}
+
+.about-company .about-company__item {
+  background-color: var(--bg-grey-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  padding: 50px 35px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.about-company .about-company__item i {
+  color: #009f4d;
+  font-size: 38px;
+  width: 40px;
+}
+
+.about-company .about-company__item-info a {
+  color: var(--title-color);
+  display: block;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 22px;
+  letter-spacing: 0;
+  transition: 0.3s ease;
+}
+
+.about-company .about-company__item-info a:hover {
+  color: var(--primary-color);
+}
+
+.about-company .about-company__item-info p {
+  color: var(--sub-title-color);
+}
