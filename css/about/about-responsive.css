@@ -40,4 +40,25 @@
     display: block;
     border-radius: 10px;
   }
+
+  /* FEATURE */
+  .features .features__icon i {
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .features .features__details h6 a {
+    font-size: 22px;
+  }
+
+  .features .features__details {
+    padding-left: 15px;
+  }
+
+  .features .features__icon i {
+    margin-top: 0px;
+    vertical-align: middle;
+  }
 }

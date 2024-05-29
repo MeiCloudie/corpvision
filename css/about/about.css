@@ -304,3 +304,66 @@ body {
 .team p {
   color: var(--sub-title-color);
 }
+
+/* ------------------FEATURE------------------ */
+.features {
+  background: var(--bg-grey-color);
+}
+
+.features .title {
+  max-width: 800px;
+  margin: auto;
+}
+
+.features .features__left .row,
+.features .features__right .row {
+  align-items: center;
+}
+
+.features .features__icon {
+  font-size: 30px;
+  text-align: center;
+}
+
+.features .features__icon i {
+  color: #009f4d;
+  border: 1px solid;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 8px;
+  margin-top: 4px;
+}
+
+.features .features__details h6 {
+  margin-bottom: 12px;
+}
+
+.features .features__details p {
+  color: var(--sub-title-color);
+}
+
+.features .features__details h6 a {
+  text-align: left;
+  margin-bottom: 0;
+  color: var(--title-color);
+  font-weight: 600;
+  font-size: 24px;
+  transition: 0.3s ease;
+}
+
+.features .features__details h6 a:hover {
+  color: var(--primary-color);
+}
+
+.features .features__icon.--2 i {
+  color: #ff4c4c;
+}
+
+.features .features__icon.--3 i {
+  color: #213364;
+}
+
+.features .features__icon.--4 i {
+  color: #f48924;
+}
