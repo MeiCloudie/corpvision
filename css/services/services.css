@@ -37,23 +37,3 @@ body {
   width: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
-@media (max-width: 768px) {
-  .introduce .introduce__left h3 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-@media (max-width: 480px) {
-  .introduce .introduce__left {
-    padding: 35px 20px;
-  }
-}
-
-@media (max-width: 415px) {
-  .introduce .introduce__left h3 {
-    font-size: 22px;
-    line-height: 30px;
-  }
-}
