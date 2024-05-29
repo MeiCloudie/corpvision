@@ -944,6 +944,74 @@ body {
   border-bottom-left-radius: 3px;
 }
 
+/* --------------------FEEDBACK-------------------- */
+.feedback {
+  background-color: var(--bg-grey-color);
+}
+
+/* Điều chỉnh Control của Carousel */
+.feedback .owl-dots {
+  text-align: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.feedback .owl-dots button {
+  outline: none;
+  padding: 0 8px !important;
+}
+
+.feedback .owl-dots button span {
+  background-color: #213364;
+  display: block;
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.feedback .owl-dots button:hover span,
+.feedback .owl-dots button.active span {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+/* Slide */
+.feedback__slide {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.feedback__slide blockquote {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+/* Author */
+.feedback_img {
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.feedback__author-desc h4 {
+  color: var(--title-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.feedback__author-desc span {
+  color: var(--text-color);
+  font-size: 1.7rem;
+}
+
 /* --------------------BACK TO TOP-------------------- */
 .backToTop {
   text-align: center;
