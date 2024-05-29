@@ -161,6 +161,12 @@ body {
   box-shadow: none;
 }
 
+.contact .contact__form input::placeholder,
+.contact .contact__form textarea::placeholder {
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
 .contact .contact__form textarea {
   min-height: 100px;
 }
