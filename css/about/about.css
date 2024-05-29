@@ -141,3 +141,36 @@ body {
 .about-company .about-company__item-info p {
   color: var(--sub-title-color);
 }
+
+/* ------------------STATISTIC------------------ */
+.statistic {
+  background: var(--bg-grey-color);
+}
+
+.statistic .statistic__info {
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.statistic .statistic__info span {
+  color: var(--primary-color);
+  font-size: 35px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.statistic .statistic__info h4 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  line-height: 28px;
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+.statistic .statistic__info p {
+  color: var(--sub-title-color);
+}
+
+.statistic .statistic__img {
+  border-radius: 8px;
+}
