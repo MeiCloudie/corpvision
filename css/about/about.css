@@ -367,3 +367,13 @@ body {
 .features .features__icon.--4 i {
   color: #f48924;
 }
+
+/* ------------------PROJECT------------------ */
+.project .project__info {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.project .project__info p {
+  color: var(--sub-title-color);
+}
