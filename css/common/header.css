@@ -1,0 +1,276 @@
+/* --------------------HEADER-------------------- */
+.header {
+  /* Giữ header khi scroll */
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.14);
+  padding: 15px 0;
+  transition: all 0.5s;
+}
+
+/* Note: openMenu và active là hai class động xử lý với main.js */
+.header.openMenu {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header.active {
+  background-color: var(--background-color);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+}
+
+/* Brand - Navbar brand */
+.header .navbar-brand {
+  display: flex;
+  order: -2; /* Đặt thứ tự hiển thị là -2 trong flex container */
+}
+
+.header__logo i {
+  color: var(--primary-color);
+  font-size: 3.2rem;
+}
+
+.header.active .header__brand {
+  color: var(--title-color);
+}
+
+.header__brand {
+  margin-left: 4px;
+  transition: all 0.4s;
+}
+
+.header__brand h1 {
+  font-size: 3.3rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.header__brand span {
+  font-size: 1.4rem;
+  line-height: 1;
+  font-weight: 600;
+  margin-left: 10px;
+  opacity: 0.8;
+}
+
+/* Navigation - List link */
+.header .navbar-nav {
+  margin: auto;
+}
+
+.header .nav-item {
+  margin: 0 5px;
+}
+
+.header .nav-item .nav-link {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0.7;
+  transition: all 0.4s;
+}
+
+/* Điều chỉnh màu cho Nav Link được chọn */
+.header.active .nav-item .nav-link {
+  color: var(--title-color);
+}
+
+.header.active .nav-item.show .nav-link,
+.header.active .nav-item:hover .nav-link,
+.header.active .nav-item.active .nav-link {
+  color: var(--primary-color);
+}
+
+/* Điều chỉnh màu khi hover Nav Link */
+.header .nav-item.show .nav-link,
+.header .nav-item:hover .nav-link,
+.header .nav-item.active .nav-link {
+  color: var(--white-color);
+  opacity: 1;
+}
+
+/* Phần Nav Link bậc con */
+.header .dropdown-toggle::after {
+  display: none;
+}
+
+.header .dropdown-menu {
+  background-color: var(--background-color);
+  width: 190px;
+  left: 50%;
+  margin: 0;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transform: translateX(-50%) translateY(4px);
+}
+
+.header .dropdown-menu::before {
+  content: "";
+  background-color: var(--background-color);
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--border-color);
+  border-width: 1px 0 0 1px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.header .dropdown-menu .dropdown-item {
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 6px 20px;
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+
+.header .dropdown-item:focus,
+.header .dropdown-item:hover {
+  background-color: unset;
+  opacity: 1;
+}
+
+/* Điều chỉnh Navbar Collapse Bootstrap */
+.header .navbar-collapse.collapsing,
+.header .navbar-collapse.show {
+  text-align: center;
+}
+
+/* Nút Navigation */
+/* Note: Hiển thị khi thu nhỏ màn hình */
+.header .navbar-toggler {
+  background-color: var(--primary-color);
+  margin-left: 16px;
+  height: 34px;
+  width: 34px;
+}
+
+.header .navbar-toggler i {
+  color: white;
+  display: none;
+  font-size: 2rem;
+}
+
+/* Note: Hiển thị .bar-icon khi .navbar-toggler có class 'collapsed' */
+.header .navbar-toggler.collapsed .bar-icon {
+  display: block;
+}
+
+/* Note: Hiển thị .bar-icon khi .navbar-toggler không có thuộc tính aria-expanded */
+.header .navbar-toggler:not([aria-expanded]) .bar-icon {
+  display: block;
+}
+
+.header .navbar-toggler[aria-expanded] .close-icon {
+  display: block;
+}
+
+.header .navbar-toggler.collapsed .close-icon {
+  display: none;
+}
+
+/* Phần nút search và nút switch theme */
+.header__right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* SEARCH */
+.header__search .search-icon {
+  color: white;
+  background-color: var(--primary-color);
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  font-size: 1.6rem;
+  line-height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.header__search.active .search-icon {
+  color: transparent;
+  transform: scale(60);
+}
+
+/* THEME */
+.header__theme {
+  width: 30px;
+  text-align: center;
+  padding: 4px 4px;
+  margin: 6px 0 0 12px;
+  cursor: pointer;
+}
+
+.header__theme .sun-icon {
+  color: white;
+  display: none;
+  font-size: 2.8rem;
+}
+
+.header__theme .moon-icon {
+  color: white;
+  font-size: 2.8rem;
+}
+
+/* Note: Xử lý nhận 'dark' trong main.js */
+.header.active .header__theme .moon-icon {
+  color: var(--title-color);
+}
+
+.header__theme.dark .sun-icon {
+  display: block;
+}
+
+.header__theme.dark .moon-icon {
+  display: none;
+}
+
+/* --------------------SEARCH TRÊN HEADER-------------------- */
+/* Note: Xử lý cùng với phần function trong main.js */
+.search__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.search__form .close-icon {
+  color: white;
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  font-size: 7rem;
+  cursor: pointer;
+}
+
+.search__form input {
+  /* Kích thước chữ là giá trị nhỏ hơn giữa 10% chiều rộng viewport và 5.4rem */
+  font-size: min(10vw, 5.4rem);
+  background-color: unset;
+  outline: none;
+  border: none;
+  color: white;
+  height: 50vh;
+  padding: 10vw;
+  min-width: 250px;
+}
+
+.search__form input::placeholder {
+  color: white;
+}
