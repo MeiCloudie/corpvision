@@ -1,11 +1,11 @@
 /* --------------------CAROUSEL OTHER PAGES-------------------- */
-/* Item */
 .carousel-other-pages .carousel-content {
-  height: 400px;
   background-image: url(../../img/b1.jpg);
   object-fit: cover;
   background-position: top center;
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
 }
 
 .carousel-other-pages .carousel-content img {
@@ -43,5 +43,5 @@
   top: 0;
   left: 0;
   background-color: var(--layer-color);
-  height: 400px;
+  height: 40vh;
 }
