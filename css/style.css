@@ -1012,6 +1012,99 @@ body {
   font-size: 1.7rem;
 }
 
+/* --------------------NEWS-------------------- */
+.news .card {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+}
+
+.news .card .card-thumnail {
+  overflow: hidden;
+}
+
+.news .card .card-img-top {
+  border: none;
+  border-radius: unset;
+  width: 100%;
+  transform-origin: center;
+  transition: transform 0.3s;
+}
+
+.news .card .card-img-top:hover {
+  transform: scale(1.2);
+}
+
+.news .card-body {
+  padding: 20px;
+}
+
+.news .card-body .card-text {
+  font-size: 1.7rem;
+  color: #999999;
+}
+
+.news .card-body .card-text a:hover {
+  color: #999999;
+}
+
+.news .card-body .card-title {
+  font-size: 2rem;
+  margin: 10px 0 0;
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+.news .card-body .card-title a {
+  transition: color 0.3s;
+}
+
+/* Divider */
+.news .divide {
+  border-top: 1px solid var(--border-color-light);
+}
+
+.news .card-footer {
+  background-color: var(--background-color);
+  color: #999999;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-top: none;
+}
+
+.news .card-footer img {
+  border-radius: 50%;
+}
+
+.news .card-footer .card-author {
+  color: var(--title-color);
+  font-size: 1.6rem;
+  transition: color 0.3s;
+  margin-left: 4px;
+}
+
+.news .card-footer__right {
+  margin-left: auto;
+}
+
+.news .card-footer .card-date {
+  font-weight: 400;
+}
+
+.news .card-body .card-title a:hover,
+.news .card-footer .card-author:hover {
+  color: var(--primary-color);
+}
+
+.news .card-footer__left span {
+  margin-left: 4px;
+}
+
 /* --------------------BACK TO TOP-------------------- */
 .backToTop {
   text-align: center;
