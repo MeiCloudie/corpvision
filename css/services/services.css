@@ -168,3 +168,48 @@ body {
 .contact .contact__right button {
   margin: auto;
 }
+
+/* ----------------CREATIVE---------------- */
+.creative {
+  background: var(--bg-grey-color);
+}
+
+.creative .creative__item {
+  padding: 40px 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: var(--background-color);
+  transition: 0.3s ease;
+}
+
+.creative .creative__item:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
+  transition: 0.3s ease;
+}
+
+.creative .creative__item img {
+  max-width: 65px;
+  display: block;
+  margin: 0 auto;
+}
+
+.creative .creative__item a {
+  color: var(--title-color);
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 25px;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.creative .creative__item a:hover {
+  color: var(--primary-color);
+}
+
+.creative .creative__item p {
+  color: var(--sub-title-color);
+}
+

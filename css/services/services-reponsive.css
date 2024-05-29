@@ -31,4 +31,10 @@
   .solutions-part .solutions-part__item {
     padding: 40px 30px;
   }
+
+  /* CREATIVE */
+  .creative .creative__item a {
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
