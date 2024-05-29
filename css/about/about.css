@@ -174,3 +174,45 @@ body {
 .statistic .statistic__img {
   border-radius: 8px;
 }
+
+/* ------------------GENERATION------------------ */
+.generation {
+  background: url(/img/bg1.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+}
+
+.generation::before {
+  content: "";
+  background-color: rgba(29, 42, 55, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.generation .generation__info p {
+  color: #eeeeee;
+  opacity: 0.8;
+}
+
+.generation .generation__detail {
+  max-width: 700px;
+}
+
+.generation .play-icon {
+  color: #fff;
+  border: 3px solid #ffffff;
+}
+
+.generation .play-icon:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
