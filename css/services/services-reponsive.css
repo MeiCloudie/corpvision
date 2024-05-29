@@ -2,6 +2,16 @@
 
 /* Extra large - xl - ≥1200px */
 @media screen and (max-width: 1200px) {
+  /* SOLUTIONS */
+  .solutions-part .solutions-part__item {
+    padding: 50px 30px;
+    grid-gap: 10px;
+  }
+
+  .solutions-part .solutions-part__item i {
+    font-size: 34px;
+    width: 35px;
+  }
 }
 
 /* Medium - md - ≥768px  */
@@ -10,5 +20,10 @@
   .introduce .introduce__left h3 {
     font-size: 24px;
     line-height: 32px;
+  }
+
+  /* SOLUTIONS */
+  .solutions-part .solutions-part__item {
+    padding: 40px 30px;
   }
 }

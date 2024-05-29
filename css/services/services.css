@@ -4,7 +4,7 @@ body {
   background-color: var(--background-color);
 }
 
-/* INTRODUCE */
+/* ----------------INTRODUCE---------------- */
 .introduce {
   background: var(--bg-grey-color);
   padding-top: 70px;
@@ -36,4 +36,41 @@ body {
 .introduce .introduce__right img {
   width: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* ----------------SOLUTIONS---------------- */
+.solutions-part .solutions-part__item {
+  background-color: var(--bg-grey-color);
+  padding: 50px 35px;
+  position: relative;
+  border-radius: 8px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.solutions-part .solutions-part__item i {
+  font-size: 38px;
+  width: 40px;
+  color: var(--primary-color);
+}
+
+.solutions-part .solutions-part__info a {
+  display: block;
+  color: var(--title-color);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 22px;
+  letter-spacing: 0;
+  transition: 0.3s ease;
+}
+
+.solutions-part .solutions-part__info p {
+  color: var(--sub-title-color);
+}
+
+.solutions-part .solutions-part__info a:hover {
+  color: var(--primary-color);
 }
