@@ -3,3 +3,57 @@
 body {
   background-color: var(--background-color);
 }
+
+/* INTRODUCE */
+.introduce {
+  background: var(--bg-grey-color);
+  padding-top: 70px;
+}
+
+.introduce .introduce__left {
+  background: var(--background-color);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 81px 50px;
+  text-align: center;
+}
+
+.introduce .introduce__left img {
+  width: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.introduce .introduce__left h3 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--title-color);
+}
+
+.introduce .introduce__left p {
+  color: var(--sub-title-color);
+}
+
+.introduce .introduce__right img {
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media (max-width: 768px) {
+  .introduce .introduce__left h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .introduce .introduce__left {
+    padding: 35px 20px;
+  }
+}
+
+@media (max-width: 415px) {
+  .introduce .introduce__left h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
