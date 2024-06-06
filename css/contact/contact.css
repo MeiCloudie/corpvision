@@ -59,18 +59,6 @@
   color: var(--text-color);
 }
 
-@media (max-width: 991px) {
-  .contact-infos .contact__item {
-    transform: translateX(50%);
-  }
-}
-
-@media (max-width: 768px) {
-  .contact-infos .contact__item {
-    transform: translateX(0);
-  }
-}
-
 /* --------------------MAP-------------------- */
 .contact-map {
   background-color: var(--bg-grey-color);

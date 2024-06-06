@@ -6,4 +6,7 @@
 
 /* Medium - md - ≥768px  */
 @media screen and (max-width: 768px) {
+  .contact-infos .contact__item {
+    transform: translateX(0);
+  }
 }
