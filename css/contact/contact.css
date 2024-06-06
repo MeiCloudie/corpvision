@@ -1,110 +1,71 @@
 /* CONTACT PAGE CSS */
-/* Note: Màu background của body lấy màu từ global css */
-div {
-  display: block;
-  unicode-bidi: isolate;
+
+/* --------------------CONTACT-------------------- */
+.contact {
+  background-color: var(--bg-grey-color);
 }
 
-*,
-*::before *::after {
-  box-sizing: inherit;
-}
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-  background-color: var(--background-color);
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: white;
-}
-.container {
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 48px;
-}
-/* contact */
-.contact-information .title {
+.contact .contact_title {
   max-width: 800px;
   margin: auto;
-  text-align: center !important;
-}
-.title_big {
-  font-size: 35px;
-  line-height: 45px;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  margin-left: 3rem !important;
-  margin-right: 3rem !important;
-}
-.text_title {
-  margin-top: 0.5rem !important;
-  font-size: 17px;
-  line-height: 27px;
-  color: #666;
-  opacity: 0.8;
-  margin: 0;
-  padding: 0;
 }
 
-/* card infos */
-h3 {
-  clear: both;
+.contact .contact_title h3 {
+  font-size: 35px;
+  color: var(--title-color);
+  font-weight: 700;
 }
-.contact-information .row {
-  justify-content: center !important;
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+
+.contact .contact_title p {
+  margin-top: 8px;
 }
-.col-lg-4 {
-  flex: 0 0 33.33333%;
-  max-width: 33.33333%;
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+
+.contact .contact-infos {
+  margin-top: 50px;
 }
-.row .single-contact {
+
+.contact .contact-infos .col .item {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 20px;
-  background: white;
-  padding: 30px;
-  box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
-  border-radius: 8px;
+  background-color: var(--background-color);
+  padding: 30px 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
 }
-.contact-information__card-infos .single-contact i {
-  font-size: 40px;
-  color: #3f3a64;
+
+.contact .contact-infos .col .item i {
+  font-size: 200%;
+  color: var(--title-color);
 }
-.text-box h3 {
-  font-size: 22px;
+
+.contact .contact-infos .col .item .text-box {
+  text-align: left;
+}
+
+.contact .contact-infos .col .item .text-box h3 {
+  font-size: 30px;
   font-weight: 600;
-  margin-bottom: 0.5rem !important;
-
+  color: var(--title-color);
 }
-.text-box p {
+
+.contact .contact-infos .col .item .text-box p {
+  color: var(--text-color);
   margin: 0;
-  padding: 0;
 }
 
-.mt-md-0 .mt-4 {
-  
+.contact .contact-infos .col .item .text-box a {
+  color: var(--text-color);
+}
+
+@media (max-width: 991px) {
+  .contact-infos .contact__item {
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-infos .contact__item {
+    transform: translateX(0);
+  }
 }

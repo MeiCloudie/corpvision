@@ -187,63 +187,70 @@
     </section>
 
     <!-- ------------------------CONTACT INFORMATION------------------------ -->
-    <section class="contact-information section">
-      <!-- Title -->
-      <div class="title">
-        <h3 class="title_big mx-1g-5">We are a full-service creative agency</h3>
-        <p class="text_title mt-2">
-          Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac
-          sed, lacinia est. Quisque ut lectus consequat, eros et.
-        </p>
-      </div>
-      <!-- Card Infos -->
-      <div class="contact-information__card-infos">
-        <div class="row contact_info">
-          <div class="col-lg-4 col-md-6">
-            <div class="single-contact">
-              <div class="icon-contact">
-                <span class="fa-map">
+    <section class="contact section pt-5">
+      <div class="container pt-5">
+        <!-- Title -->
+        <div class="contact_title title text-center">
+          <h3 class="mb-3">We are a full-service creative agency</h3>
+          <p class="fw-medium fs-4">
+            Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi
+            ac sed, lacinia est.
+            <br />
+            Quisque ut lectus consequat, eros et.
+          </p>
+        </div>
+        <!-- Card infos -->
+        <div class="contact_info">
+          <div class="row contact-infos text-center">
+            <!-- Item -->
+            <div class="col col-lg-4 col-md-6">
+              <div class="item ourLocation">
+                <!-- Icon -->
+                <div class="icon-box">
                   <i class="fa-regular fa-map"></i>
-                </span>
-              </div>
-              <div class="text-box">
-                <h3 class="mb-2">Our Location:</h3>
-                <p>
-                  Corp Vision, 343 marketing, <br />
-                  #21 cravel 1st street, NY - 62617.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
-            <div class="single-contact">
-              <div class="icon-contact">
-                <span class="fa-solid fa-mobile-screen-button"></span>
-              </div>
-              <div class="text-box">
-                <h3 class="mb-2">Give us a call</h3>
-                <p>
-                  <a href="tel:+12 404-11-22-89">+12 404-11-22-89</a>
-                </p>
-                <p>
-                  <a href="tel:+12 404-11-22-99">+12 404-11-22-99</a>
-                </p>
+                </div>
+                <!-- Box content -->
+                <div class="text-box">
+                  <h3 class="mb-2">Our Location:</h3>
+                  <p>
+                    Corp Vision, 343 marketing, #21 cravel 1st street, NY -
+                    62617.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
-            <div class="single-contact">
-              <div class="icon-contact">
-                <span class="fa-regular fa-envelope"></span>
+            <!-- Item -->
+            <div class="col col-lg-4 col-md-6 mt-md-0 mt-4">
+              <div class="item phoneNumber">
+                <!-- Icon -->
+                <div class="icon-box">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <!-- Box content -->
+                <div class="text-box">
+                  <h3 class="mb-2">Give us a call</h3>
+                  <p><a href="tel:+12 404-11-22-89"> +12 404-11-22-89</a></p>
+                  <p><a href="tel:+12 404-11-22-99"> +12 404-11-22-99</a></p>
+                </div>
               </div>
-              <div class="text-box">
-                <h3 class="mb-2">Help Desk</h3>
-                <p>
-                  <a href="mailto:compoany@gmail.com">company@gmail.com</a>
-                </p>
-                <p>
-                  <a href="mailto:support@gmail.com">support@gmail.com</a>
-                </p>
+            </div>
+            <!-- Item -->
+            <div class="col col-lg-4 col-md-6 mt-lg-0 mt-4 contact__item">
+              <div class="item help">
+                <!-- Icon -->
+                <div class="icon-box">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <!-- Box content -->
+                <div class="text-box">
+                  <h3 class="mb-2">Help Desk</h3>
+                  <p>
+                    <a href="mailto:company@gmail.com"> company@gmail.com</a>
+                  </p>
+                  <p>
+                    <a href="mailto:support@gmail.com"> support@gmail.com</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -518,7 +525,7 @@
       $(".owl-carousel").owlCarousel({
         items: 1,
         dots: true,
-      });
+      })
     </script>
 
     <!-- Light Box 2 Gallery -->
@@ -537,7 +544,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      new WOW().init();
+      new WOW().init()
     </script>
 
     <!-- Back to top - Cody House -->
@@ -547,7 +554,7 @@
     <!-- ----------------Main JavaScript---------------- -->
     <script src="./js/main.js"></script>
     <script>
-      handleHeaderEvent();
+      handleHeaderEvent()
     </script>
   </body>
 </html>
