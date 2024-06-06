@@ -1,5 +1,6 @@
 /* --------------------CAROUSEL OTHER PAGES-------------------- */
 .carousel-other-pages .carousel-content {
+  position: relative;
   background-image: url(../../img/b1.jpg);
   object-fit: cover;
   background-position: top center;
@@ -8,32 +9,25 @@
   height: 40vh;
 }
 
-.carousel-other-pages .carousel-content img {
-  object-fit: cover;
-  background-position: top center;
-  background-size: 100%;
-}
-
 /* Caption */
 .carousel-other-pages .carousel-content .carousel-caption {
   left: 0;
   right: 0;
-  top: 50%;
+  top: 45%;
   text-align: center;
   z-index: 1;
-  transform: translateY(-65%);
 }
 
 .carousel-other-pages .carousel-caption h3 {
-  font-size: 6.5rem;
+  font-size: 5rem;
   font-weight: 600;
-  margin-bottom: 0.3em;
+  margin-bottom: 5px;
+  padding: 0;
 }
 
 .carousel-other-pages .carousel-caption p {
   color: white;
   font-size: 2rem;
-  margin-bottom: 1.7em;
   opacity: 0.8;
 }
 
