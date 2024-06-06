@@ -1,5 +1,110 @@
 /* CONTACT PAGE CSS */
 /* Note: Màu background của body lấy màu từ global css */
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 body {
   background-color: var(--background-color);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: white;
+}
+.container {
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 48px;
+}
+/* contact */
+.contact-information .title {
+  max-width: 800px;
+  margin: auto;
+  text-align: center !important;
+}
+.title_big {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+.text_title {
+  margin-top: 0.5rem !important;
+  font-size: 17px;
+  line-height: 27px;
+  color: #666;
+  opacity: 0.8;
+  margin: 0;
+  padding: 0;
+}
+
+/* card infos */
+h3 {
+  clear: both;
+}
+.contact-information .row {
+  justify-content: center !important;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-lg-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.row .single-contact {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+  background: white;
+  padding: 30px;
+  box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+  border-radius: 8px;
+}
+.contact-information__card-infos .single-contact i {
+  font-size: 40px;
+  color: #3f3a64;
+}
+.text-box h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0.5rem !important;
+
+}
+.text-box p {
+  margin: 0;
+  padding: 0;
+}
+
+.mt-md-0 .mt-4 {
+  
 }

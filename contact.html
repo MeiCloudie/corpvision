@@ -177,8 +177,8 @@
       <!-- Carousel Inner - Parent -->
       <div class="carousel-content">
         <div class="carousel-caption container">
-          <h3 class="animate__animated wow animate__flipInX">Contact Us</h3>
-          <p class="animate__animated wow animate__flipInX">
+          <h3 class="title_carousel_h3 wow animate__flipInX">Contact Us</h3>
+          <p class="title_carousel wow animate__flipInX">
             We are an agency located in New York
           </p>
         </div>
@@ -189,24 +189,148 @@
     <!-- ------------------------CONTACT INFORMATION------------------------ -->
     <section class="contact-information section">
       <!-- Title -->
-      <div class="title"></div>
+      <div class="title">
+        <h3 class="title_big mx-1g-5">We are a full-service creative agency</h3>
+        <p class="text_title mt-2">
+          Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac
+          sed, lacinia est. Quisque ut lectus consequat, eros et.
+        </p>
+      </div>
       <!-- Card Infos -->
-      <div class="contact-information__card-infos"></div>
+      <div class="contact-information__card-infos">
+        <div class="row contact_info">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-contact">
+              <div class="icon-contact">
+                <span class="fa-map">
+                  <i class="fa-regular fa-map"></i>
+                </span>
+              </div>
+              <div class="text-box">
+                <h3 class="mb-2">Our Location:</h3>
+                <p>
+                  Corp Vision, 343 marketing, <br />
+                  #21 cravel 1st street, NY - 62617.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+            <div class="single-contact">
+              <div class="icon-contact">
+                <span class="fa-solid fa-mobile-screen-button"></span>
+              </div>
+              <div class="text-box">
+                <h3 class="mb-2">Give us a call</h3>
+                <p>
+                  <a href="tel:+12 404-11-22-89">+12 404-11-22-89</a>
+                </p>
+                <p>
+                  <a href="tel:+12 404-11-22-99">+12 404-11-22-99</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+            <div class="single-contact">
+              <div class="icon-contact">
+                <span class="fa-regular fa-envelope"></span>
+              </div>
+              <div class="text-box">
+                <h3 class="mb-2">Help Desk</h3>
+                <p>
+                  <a href="mailto:compoany@gmail.com">company@gmail.com</a>
+                </p>
+                <p>
+                  <a href="mailto:support@gmail.com">support@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ------------------------MAP------------------------ -->
     <section class="map section">
       <!-- Iframe Link Map -->
+      <div class="container">
+        <div class="map pt-lg-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059445135!2d-74.25986613799748!3d40.69714941774136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e3!4m0!4m0!5e0!3m2!1sen!2sin!4v1570181661801!5m2!1sen!2sin"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </div>
     </section>
 
     <!-- ------------------------CONTACT FORM------------------------ -->
     <section class="contact-form section">
-      <!-- Title -->
-      <div class="title"></div>
-      <!-- Form -->
-      <div class="contact-form__form">
-        <!-- Input -->
-        <!-- Button Submit -->
+      <div class="contact-infhny py-5">
+        <div class="container py-lg-3 ContactPageForm">
+          <div class="top-map">
+            <div class="map-content-9">
+              <form action="" method="post">
+                <div class="form-top1">
+                  <h3 class="title-big text-center mb-2">
+                    Let's talk about your project
+                  </h3>
+                  <p class="mb-lg-5 mb-4 text-center">
+                    We have made it easy for clients to reach us and get their
+                    solutions weaved
+                  </p>
+                  <div class="form-top">
+                    <div class="form-top-left">
+                      <input
+                        type="text"
+                        name="w3lName"
+                        id="w3lName"
+                        placeholder="Name"
+                        required=""
+                      />
+
+                      <input
+                        type="number"
+                        name="w3lPhone"
+                        placeholder="Your Phone Number"
+                        required=""
+                      />
+
+                      <input
+                        type="email"
+                        name="w3lSender"
+                        id="w3lSender"
+                        placeholder="Email*"
+                        required=""
+                      />
+
+                      <input
+                        type="text"
+                        name="w3lSubject"
+                        id="w3lName"
+                        placeholder="Subject"
+                        required=""
+                      />
+                    </div>
+                    <div class="form-top-righ">
+                      <textarea
+                        name="w3lMessage"
+                        id="w3lMessage"
+                        placeholder="Message*"
+                        required=""
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="text-lg-right text-center">
+                    <button type="submit" class="btn btn-style btn-primary">
+                      Submit Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -394,7 +518,7 @@
       $(".owl-carousel").owlCarousel({
         items: 1,
         dots: true,
-      })
+      });
     </script>
 
     <!-- Light Box 2 Gallery -->
@@ -413,7 +537,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      new WOW().init()
+      new WOW().init();
     </script>
 
     <!-- Back to top - Cody House -->
@@ -423,7 +547,7 @@
     <!-- ----------------Main JavaScript---------------- -->
     <script src="./js/main.js"></script>
     <script>
-      handleHeaderEvent()
+      handleHeaderEvent();
     </script>
   </body>
 </html>
