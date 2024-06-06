@@ -3,6 +3,7 @@
 /* --------------------CONTACT-------------------- */
 .contact {
   background-color: var(--bg-grey-color);
+  padding-bottom: 0;
 }
 
 .contact .contact_title {
@@ -68,4 +69,20 @@
   .contact-infos .contact__item {
     transform: translateX(0);
   }
+}
+
+/* --------------------MAP-------------------- */
+.contact-map {
+  background-color: var(--bg-grey-color);
+}
+
+.contact-map .map {
+  padding: 50px 0;
+}
+
+.contact-map .map .iframe-change {
+  border: none;
+  display: block;
+  width: 100%;
+  min-height: 400px;
 }
